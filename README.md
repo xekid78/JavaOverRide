@@ -6,21 +6,6 @@
 
 ## コード
 ```
-public class Override {
-
-	public static void main(String[] args) {
-		Box2 box = new Box2("鋼鉄の剣");
-		box.open();
-
-		System.out.println();
-		MagicBox magicbox = new MagicBox("ものまねモンスター");
-		magicbox.look();
-		magicbox.open();
-
-	}
-
-}
-
 class Box2 {
 	public String myItem;
 
@@ -44,6 +29,18 @@ class MagicBox extends Box2 {
 
 	public void open() {
 		System.out.println("宝箱を開いた。" + myItem + "が襲ってきた！");
+	}
+}
+
+public class Override {
+	public static void main(String[] args) {
+		Box2 box = new Box2("鋼鉄の剣");
+		box.open();
+
+		System.out.println();
+		MagicBox magicbox = new MagicBox("ものまねモンスター");
+		magicbox.look();
+		magicbox.open();
 	}
 }
 ```
